@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Meta Page showing assignment requirement coverage for the Luxury Cars website." />
+  <meta name="author" content="Student ID: 3327722 " />
+  <title>Luxury Cars | Meta Page</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Internal CSS -->
+  <style>
+    .meta-header-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .meta-info-card {
+      background-color: #FFFFFF;
+      border: 1px solid #D1D9E6;
+      border-radius: 10px;
+      padding: 1.2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .meta-info-card .meta-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #6B7280;
+      margin-bottom: 0.3rem;
+    }
+    .meta-info-card .meta-value {
+      font-size: 1.05rem;
+      font-weight: bold;
+      color: #111111;
+    }
+    .section-label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #6B7280;
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid #D1D9E6;
+    }
+    .badge-complete {
+      display: inline-block;
+      background-color: #DCFCE7;
+      color: #15803D;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+    .badge-pending {
+      display: inline-block;
+      background-color: #FEF9C3;
+      color: #92400E;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+    .validation-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .validation-card {
+      background-color: #FFFFFF;
+      border: 1px solid #D1D9E6;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 14px rgba(0,0,0,0.07);
+    }
+    .validation-card-header {
+      background-color: #111111;
+      color: #FFFFFF;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .validation-card-header h4 { margin: 0; color: #FFFFFF; }
+    .validation-card-body { padding: 1.5rem; }
+    .v-icon { font-size: 1.4rem; }
+    @media (max-width: 768px) {
+      .validation-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a href="Main.html" class="nav-logo">LUXURY<span>AUTO</span></a>
+      <ul class="nav-links">
+        <li><a href="Main.html">Home</a></li>
+        <li><a href="Brands.html">Brands</a></li>
+        <li><a href="Features.html">Features</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="References.html">References</a></li>
+        <li><a href="MetaPage.html" class="active">Meta Page</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <header class="page-banner">
+    <h1>Meta Page</h1>
+    <div class="gold-line"></div>
+    <p>
+      A complete record of how this assignment fulfils each stated technical
+      and content requirement, with file locations and validation information.
+    </p>
+  </header>
+
+  <main id="main-content">
+    <section class="section section-alt">
+      <div class="container">
+
+        <!-- Assignment Details -->
+        <div class="meta-header-info">
+          <div class="meta-info-card">
+            <div class="meta-label"></div>
+            <div class="meta-value">3327722</div>
+          </div>
+          <div class="meta-info-card">
+            <div class="meta-label">Unit Code</div>
+            <div class="meta-value">4478</div>
+          </div>
+          <div class="meta-info-card">
+            <div class="meta-label">Topic</div>
+            <div class="meta-value">Luxury Cars</div>
+          </div>
+          <div class="meta-info-card">
+            <div class="meta-label">Total Pages</div>
+            <div class="meta-value">6 HTML Pages</div>
+          </div>
+          <div class="meta-info-card">
+            <div class="meta-label">Stylesheet</div>
+            <div class="meta-value">style.css</div>
+          </div>
+          <div class="meta-info-card">
+            <div class="meta-label">Submission Year</div>
+            <div class="meta-value">2026</div>
+          </div>
+        </div>
+
+        <!-- HTML Elements Checklist -->
+        <h2>HTML Elements — Requirement Coverage</h2>
+        <p class="text-gray">
+          The table below maps each required HTML element to its file location,
+          demonstrating full coverage of the assessment criteria.
+        </p>
+
+        <h3 class="section-label">Structural &amp; Semantic Elements</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Requirement</th>
+              <th>Element / Feature</th>
+              <th>File Name</th>
+              <th>Location / Note</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Header</td>
+              <td><code>&lt;header&gt;</code></td>
+              <td>All pages</td>
+              <td>Hero / page-banner section on every page</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Navigation</td>
+              <td><code>&lt;nav&gt;</code></td>
+              <td>All pages</td>
+              <td>Sticky top navigation bar linking all 6 pages</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Main Content</td>
+              <td><code>&lt;main&gt;</code></td>
+              <td>All pages</td>
+              <td>Wraps all primary page content</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Footer</td>
+              <td><code>&lt;footer&gt;</code></td>
+              <td>All pages</td>
+              <td>Three-column footer on every page</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Division / Container</td>
+              <td><code>&lt;div&gt;</code></td>
+              <td>All pages</td>
+              <td>Used throughout for layout containers and cards</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Aside</td>
+              <td><code>&lt;aside&gt;</code></td>
+              <td>Contact.html</td>
+              <td>Assignment details sidebar panel</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="section-label">Text &amp; Phrase Elements</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Requirement</th>
+              <th>Element</th>
+              <th>File Name</th>
+              <th>Location / Note</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Headings</td>
+              <td><code>&lt;h1&gt;</code> – <code>&lt;h4&gt;</code></td>
+              <td>All pages</td>
+              <td>Page titles, section headings, card headings</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Paragraphs</td>
+              <td><code>&lt;p&gt;</code></td>
+              <td>All pages</td>
+              <td>Body content throughout all pages</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Line Break</td>
+              <td><code>&lt;br /&gt;</code></td>
+              <td>Main.html, Contact.html</td>
+              <td>Hero subtitle, reference field line breaks</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Blockquote</td>
+              <td><code>&lt;blockquote&gt;</code></td>
+              <td>Main.html, Features.html</td>
+              <td>Featured quotes with gold styling and cite attribution</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Strong / Bold</td>
+              <td><code>&lt;strong&gt;</code></td>
+              <td>All pages</td>
+              <td>Brand names, key terms highlighted throughout</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Emphasis / Italic</td>
+              <td><code>&lt;em&gt;</code></td>
+              <td>Brands.html, Features.html</td>
+              <td>Brand slogans and technical terms in italics</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Code</td>
+              <td><code>&lt;code&gt;</code></td>
+              <td>Contact.html, MetaPage.html</td>
+              <td>HTML element names displayed as inline code</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="section-label">Lists</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Requirement</th>
+              <th>Element</th>
+              <th>File Name</th>
+              <th>Location / Note</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ordered List</td>
+              <td><code>&lt;ol&gt;</code></td>
+              <td>Main.html, Brands.html</td>
+              <td>Top 5 brands by heritage (Brands.html); comfort engineering steps (Main.html)</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Unordered List</td>
+              <td><code>&lt;ul&gt;</code></td>
+              <td>Main.html, Brands.html</td>
+              <td>Reasons people love luxury cars; brand feature highlights on all brand cards</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Description List</td>
+              <td><code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code>, <code>&lt;dd&gt;</code></td>
+              <td>Main.html, Brands.html, Features.html</td>
+              <td>Comfort features (Main.html); key terminology (Brands.html); technical glossary (Features.html)</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Nav List</td>
+              <td><code>&lt;ul&gt;</code> in <code>&lt;nav&gt;</code></td>
+              <td>All pages</td>
+              <td>Navigation menu and footer link lists on every page</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="section-label">Tables, Links &amp; Media</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Requirement</th>
+              <th>Element</th>
+              <th>File Name</th>
+              <th>Location / Note</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Table</td>
+              <td><code>&lt;table&gt;</code></td>
+              <td>Brands.html, Features.html, MetaPage.html</td>
+              <td>Brand comparison, feature comparison, and performance figures tables</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Hyperlinks (Internal)</td>
+              <td><code>&lt;a href="..."&gt;</code></td>
+              <td>All pages</td>
+              <td>Navigation links, footer links, and in-body cross-page links</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>External Links</td>
+              <td><code>&lt;a href target="_blank"&gt;</code></td>
+              <td>Main.html, Brands.html, References.html</td>
+              <td>Car and Driver link (Main.html); official brand sites (Brands.html); all references (References.html)</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Email Link</td>
+              <td><code>&lt;a href="mailto:..."&gt;</code></td>
+              <td>Contact.html, All footers</td>
+              <td>student@university.edu email links in footer and contact info panel</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td><code>&lt;img&gt;</code></td>
+              <td>Main.html, Brands.html</td>
+              <td>Hero car image (Main.html); one image per brand card (Brands.html)</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="section-label">Forms</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Requirement</th>
+              <th>Element</th>
+              <th>File Name</th>
+              <th>Location / Note</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Contact Form</td>
+              <td><code>&lt;form&gt;</code></td>
+              <td>Contact.html</td>
+              <td>Professional contact form with all required fields</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Text Input</td>
+              <td><code>&lt;input type="text"&gt;</code></td>
+              <td>Contact.html</td>
+              <td>Name, Subject, and "How did you find us" fields</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Email Input</td>
+              <td><code>&lt;input type="email"&gt;</code></td>
+              <td>Contact.html</td>
+              <td>Email address field with built-in format validation</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Select / Dropdown</td>
+              <td><code>&lt;select&gt;</code></td>
+              <td>Contact.html</td>
+              <td>Enquiry Category dropdown with four options</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Textarea</td>
+              <td><code>&lt;textarea&gt;</code></td>
+              <td>Contact.html</td>
+              <td>Message body textarea with resize capability</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Submit Button</td>
+              <td><code>&lt;button type="submit"&gt;</code></td>
+              <td>Contact.html</td>
+              <td>"Send Message" button at the bottom of the contact form</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- CSS Requirements -->
+        <h2 class="mt-2">CSS Requirements — Requirement Coverage</h2>
+
+        <h3 class="section-label">CSS Types &amp; Selectors</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Requirement</th>
+              <th>Type / Selector</th>
+              <th>File Name</th>
+              <th>Location / Note</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>External CSS</td>
+              <td><code>&lt;link rel="stylesheet"&gt;</code></td>
+              <td>style.css (linked on all pages)</td>
+              <td>All 6 HTML pages link to style.css via the &lt;head&gt;</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Internal CSS</td>
+              <td><code>&lt;style&gt;</code> in <code>&lt;head&gt;</code></td>
+              <td>All HTML pages</td>
+              <td>Every page contains an internal &lt;style&gt; block with page-specific rules</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Inline CSS</td>
+              <td><code>style="..."</code> attribute</td>
+              <td>Main.html, Brands.html, Contact.html, Features.html, MetaPage.html</td>
+              <td>Applied to hero paragraph (Main.html), brand tag (Brands.html), form-wrap (Contact.html)</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>Class Selector</td>
+              <td><code>.class-name</code></td>
+              <td>style.css</td>
+              <td>Extensively used: .card, .btn, .section, .hero, .nav-links, etc.</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td>ID Selector</td>
+              <td><code>#id-name</code></td>
+              <td>All HTML pages</td>
+              <td>Section IDs used on all pages: #introduction, #bmw, #contact-form, #main-content, etc.</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="section-label">CSS Properties Used</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Used In</th>
+              <th>Example Usage</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>background-color</code></td>
+              <td>style.css</td>
+              <td>.card, body, .site-nav, footer, .hero</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td><code>color</code></td>
+              <td>style.css</td>
+              <td>Typography, link colours, headings, nav items</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td><code>font-family</code></td>
+              <td>style.css</td>
+              <td>Georgia (body), Palatino (headings, nav, buttons)</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td><code>font-size</code></td>
+              <td>style.css</td>
+              <td>h1–h4, p, .small, .card-label, .nav-links</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td><code>margin</code></td>
+              <td>style.css</td>
+              <td>All elements — spacing between sections, headings, paragraphs</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td><code>padding</code></td>
+              <td>style.css</td>
+              <td>.container, .card-body, .form-group, .section, .hero</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td><code>text-align</code></td>
+              <td>style.css</td>
+              <td>.text-center, .section-title, .feature-item, .hero-content</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td><code>text-decoration</code></td>
+              <td>style.css</td>
+              <td>a { text-decoration: none }, a:hover { text-decoration: underline }</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td><code>font-weight</code></td>
+              <td>style.css</td>
+              <td>Bold labels, headings, .bold utility class, nav logo</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td><code>border</code></td>
+              <td>style.css</td>
+              <td>.card, .form-group input, .styled-table, blockquote, .ref-list li</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td><code>border-radius</code></td>
+              <td>style.css</td>
+              <td>.card (12px), .btn (8px), .form-wrap (14px), .hero-badge (20px)</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+            <tr>
+              <td><code>box-shadow</code></td>
+              <td>style.css</td>
+              <td>.card, .site-nav, .form-wrap, .styled-table, .feature-item</td>
+              <td><span class="badge-complete">✓ Complete</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- File Structure -->
+        <h2 class="mt-2">Project File Structure</h2>
+        <div class="info-box">
+          <h4>Folder: LuxuryCarsProject/</h4>
+          <pre style="font-family: monospace; font-size: 0.9rem; line-height: 2; background: none; border: none;">
+LuxuryCarsProject/
+│
+├── Main.html          (Home Page)
+├── Brands.html        (Luxury Car Brands)
+├── Features.html      (Car Features &amp; Comparison Tables)
+├── Contact.html       (Contact Form Page)
+├── References.html    (Harvard Reference List)
+├── MetaPage.html      (This page — requirement mapping)
+├── style.css          (External stylesheet)
+│
+├── images/
+│   ├── car-main.jpg   (Hero image)
+│   ├── bmw.jpg
+│   ├── mercedes.jpg
+│   ├── audi.jpg
+│   ├── rollsroyce.jpg
+│   └── bentley.jpg
+│
+└── screenshots/
+    ├── html-validation.png    (W3C HTML validation result)
+    └── css-validation.png     (W3C CSS validation result)
+          </pre>
+        </div>
+
+        <!-- Validation Section -->
+        <h2 class="mt-2">W3C Validation Screenshots</h2>
+        <p class="text-gray">
+          All HTML and CSS files in this project have been written to conform to
+          W3C standards. Validation was performed using the
+          <a href="https://validator.w3.org" target="_blank" rel="noopener noreferrer">W3C HTML Validator</a>
+          and the
+          <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener noreferrer">W3C CSS Validator</a>.
+        </p>
+
+      
+
+        <div class="validation-grid">
+
+          <div class="validation-card">
+            <div class="validation-card-header">
+              <span class="v-icon">🌐</span>
+              <h4>HTML Validation — W3C</h4>
+            </div>
+            <div class="validation-card-body">
+              <p class="text-gray small">
+                Validated using: <a href="https://validator.w3.org" target="_blank" rel="noopener noreferrer">validator.w3.org</a>
+              </p>
+              <p class="text-gray small">
+                All six HTML pages were checked for structural errors, missing tags,
+                deprecated attributes, and accessibility concerns.
+              </p>
+              <div class="screenshot-box">
+                <span>📸 HTML Validation Screenshot will be inserted here</span>
+              </div>
+              <p class="small text-gray mt-1">
+                Filename: <code>screenshots/html-validation.png</code>
+              </p>
+            </div>
+          </div>
+
+          <div class="validation-card">
+            <div class="validation-card-header">
+              <span class="v-icon"></span>
+              <h4>CSS Validation — W3C Jigsaw</h4>
+            </div>
+            <div class="validation-card-body">
+              <p class="text-gray small">
+                Validated using: <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener noreferrer">jigsaw.w3.org/css-validator</a>
+              </p>
+              <p class="text-gray small">
+                The external stylesheet (style.css) was validated for correct property
+                usage, value syntax, and CSS level compatibility.
+              </p>
+              <div class="screenshot-box">
+                <span>📸 CSS Validation Screenshot will be inserted here</span>
+              </div>
+              <p class="small text-gray mt-1">
+                Filename: <code>screenshots/css-validation.png</code>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Final summary -->
+        <div class="info-box mt-2">
+          <h4>Assignment Completion Summary</h4>
+          <p>
+            All required HTML elements, CSS types, page structures, and content
+            requirements have been implemented as per the assessment specification.
+            The website consists of 6 HTML pages, 1 external CSS file, and supporting
+            image and screenshot directories.
+          </p>
+          <p class="mb-0">
+            <strong>Student ID:3327722</strong>  &nbsp;|&nbsp;
+            <strong>Unit:</strong> IIT 4478 and 8936&nbsp;&nbsp;
+            <strong>Topic:</strong> Luxury Cars: We All Like Those Four-Wheeled Machines
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>LUXURY<span>AUTO</span></h3>
+        <p></p>
+        <p class="small mt-1">Student ID:3327722 &nbsp;&nbsp;</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="Main.html">Home</a></li>
+          <li><a href="Brands.html">Brands</a></li>
+          <li><a href="Features.html">Features</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="References.html">References</a></li>
+          <li><a href="MetaPage.html">Meta Page</a></li>
+          <li><a href="mailto:student@university.edu">Email Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p></p>
+    </div>
+  </footer>
+
+</body>
+</html>

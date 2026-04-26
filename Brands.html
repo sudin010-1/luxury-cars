@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Luxury car brands including BMW, Mercedes-Benz, Audi, Rolls-Royce and Bentley." />
+  <meta name="author" content="Student ID: 3327722" />
+  <title>Luxury Cars | Brands</title>
+ 
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+ 
+  <!-- Internal CSS -->
+  <style>
+    .brand-intro {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 3rem;
+      color: #444444;
+      font-size: 1.05rem;
+    }
+    .founding-year {
+      display: inline-block;
+      background-color: #F0F4FF;
+      border: 1px solid #1A73E8;
+      color: #1A73E8;
+      font-size: 0.8rem;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      padding: 0.25rem 0.8rem;
+      border-radius: 20px;
+      margin-bottom: 0.5rem;
+    }
+    .highlights-list {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+    .highlights-list li {
+      padding: 0.3rem 0 0.3rem 1.8rem;
+      position: relative;
+      font-size: 0.93rem;
+      color: #444444;
+    }
+    .highlights-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #22C55E;
+      font-weight: bold;
+    }
+    .summary-tables {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 768px) {
+      .summary-tables { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+ 
+<body>
+ 
+  <!-- Navigation -->
+  <nav class="site-nav" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a href="Main.html" class="nav-logo">LUXURY<span>AUTO</span></a>
+      <ul class="nav-links">
+        <li><a href="Main.html">Home</a></li>
+        <li><a href="Brands.html" class="active">Brands</a></li>
+        <li><a href="Features.html">Features</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="References.html">References</a></li>
+        <li><a href="MetaPage.html">Meta Page</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+  <!-- Page Banner -->
+  <header class="page-banner">
+    <h1>The World's Finest Brands</h1>
+    <div class="gold-line"></div>
+    <p>
+      An indepth look at five manufacturers who have shaped the definition of
+      automotive luxury across more than a century of innovation.
+    </p>
+  </header>
+ 
+  <main id="main-content">
+ 
+    <!-- Introduction -->
+    <section class="section section-alt">
+      <div class="container">
+        <p class="brand-intro">
+          The luxury car segment is defined not just by price, but by philosophy.
+          Each of the brands presented below has cultivated a distinct identity 
+          one built on decades of engineering heritage, design vision, and an
+          unwavering commitment to the customer experience.
+        </p>
+ 
+        <!-- Ordered list of brands -->
+        <h3 class="text-center">Top Five Luxury Brands — Ranked by Heritage</h3>
+        <ol class="styled-ol" style="max-width: 600px; margin: 1.5rem auto;">
+          <li>Rolls Royce Motor Cars : Founded 1904</li>
+          <li>Bentley Motors : Founded 1919</li>
+          <li>Mercedes Benz : Founded 1926</li>
+          <li>BMW : Founded 1916</li>
+          <li>Audi : Founded 1909</li>
+        </ol>
+      </div>
+    </section>
+ 
+    <!-- BMW -->
+    <section class="section" id="bmw">
+      <div class="container">
+        <div class="brand-card">
+          <img src="images/bmw.jpg" alt="A BMW luxury saloon on a winding road" />
+          <div class="brand-card-body">
+            <span class="founding-year">Founded 1916 · Bavaria, Germany</span>
+            <span class="brand-tag">BMW</span>
+            <h2>Bayerische Motoren Werke</h2>
+            <p>
+              Bayerische Motoren Werke(BMW) was founded in Munich, Germany, in
+              1916, originally as an aircraft engine manufacturer. The company
+              transitioned to motorcycles in 1923 before producing its first
+              automobile in 1928. Over the following century, BMW evolved into one
+              of the most recognisable luxury and performance brands in the world.
+            </p>
+            <p>
+              What distinguishes BMW from many of its competitors is its consistent
+              focus on the driver. The brand's long running slogan, <em>"The Ultimate
+              Driving Machine,"</em> is not merely marketing.It reflects a genuine
+              engineering philosophy that prioritises dynamic handling, precise
+              steering, and a connection between car and driver that few rivals can
+              match.
+            </p>
+            <h4>What Makes BMW a Luxury Brand?</h4>
+            <ul class="highlights-list">
+              <li>Driver focused engineering with near perfect weight distribution</li>
+              <li>Premium Merino leather and Bowers &amp; Wilkins audio systems</li>
+              <li>Advanced driver assistance through the iDrive infotainment suite</li>
+              <li>High-performance M and Alpina sub-brands</li>
+              <li>Strong global prestige and consistent quality assurance</li>
+            </ul>
+            <p>
+              <a href="https://www.bmw.com" target="_blank" rel="noopener noreferrer">
+                Visit the Official BMW Website ↗
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Mercedes-Benz -->
+    <section class="section section-alt" id="mercedes">
+      <div class="container">
+        <div class="brand-card">
+          <img src="images/mercedes.jpg" alt="A Mercedes-Benz S-Class in silver" />
+          <div class="brand-card-body">
+            <span class="founding-year">Founded 1926 · Stuttgart, Germany</span>
+            <span class="brand-tag">Mercedes-Benz</span>
+            <h2>Mercedes-Benz</h2>
+            <p>
+              Mercedes Benz has a claim that very few automotive brands can make:
+              it helped invent the automobile. Karl Benz patented the first petrol 
+              powered motor car in 1886, and the Daimler Benz merger of 1926 created
+              the corporate entity we know today. The three pointed star is arguably
+              the most recognised automotive emblem on earth.
+            </p>
+            <p>
+              The Mercedes Benz S-Class brand's flagship saloon  has for
+              decades served as an industry benchmark. Technologies that first appeared
+              in the S-Class, including anti lock brakes, airbags, and electronic
+              stability control, later became standard across the automotive industry.
+              It is a vehicle that defines what a luxury car can be.
+            </p>
+            <h4>What Makes Mercedes Benz a Luxury Brand?</h4>
+            <ul class="highlights-list">
+              <li>Over 130 years of continuous automotive innovation</li>
+              <li>Flagship S-Class acts as a global technology benchmark</li>
+              <li>MBUX intelligent infotainment system with natural language control</li>
+              <li>AMG performance division producing supercars</li>
+              <li>Unmatched safety engineering track record</li>
+            </ul>
+            <p>
+              <a href="https://www.mercedes-benz.com" target="_blank" rel="noopener noreferrer">
+                Visit the Official Mercedes-Benz Website ↗
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Audi -->
+    <section class="section" id="audi">
+      <div class="container">
+        <div class="brand-card">
+          <img src="images/audi.jpg" alt="An Audi A8 L in dark grey" />
+          <div class="brand-card-body">
+            <span class="founding-year">Founded 1909 · Ingolstadt, Germany</span>
+            <span class="brand-tag">Audi</span>
+            <h2>Audi AG</h2>
+            <p>
+              Audi's origins trace back to August Horch, who founded the company
+              in 1909 after leaving his previous firm. The name "Audi" is a Latin
+              translation of the German word <em>horch</em> (meaning "listen"),
+              a naming convention that speaks to the brand's sense of understated
+              intelligence. The four interlocking rings logo represents the merger
+              of four independent motor vehicle manufacturers in 1932.
+            </p>
+            <p>
+              Today, Audi occupies a distinct position in the luxury market  
+              sophisticated yet restrained, technologically advanced yet approachable.
+             Its flagship A8 saloon competes directly with the BMW 7 Series and
+              Mercedes Benz S-Class, offering a uniquely technology first interpretation
+              of premium motoring.
+            </p>
+            <h4>What Makes Audi a Luxury Brand?</h4>
+            <ul class="highlights-list">
+              <li>Pioneering Quattro all-wheel drive technology</li>
+              <li>Virtual Cockpit digital instrument cluster</li>
+              <li>Matrix LED headlights with individual pixel control</li>
+              <li>Audi Sport RS and R8 supercar performance models</li>
+              <li>High-quality interior materials and precise build quality</li>
+            </ul>
+            <p>
+              <a href="https://www.audi.com" target="_blank" rel="noopener noreferrer">
+                Visit the Official Audi Website ↗
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Rolls-Royce -->
+    <section class="section section-alt" id="rollsroyce">
+      <div class="container">
+        <div class="brand-card">
+          <img src="images/rollsroyce.jpg" alt="A Rolls-Royce Phantom in white" />
+          <div class="brand-card-body">
+            <span class="founding-year">Founded 1904 · Manchester, England</span>
+            <span class="brand-tag" style="background-color:#C9A84C; color:#111111;">Rolls-Royce</span>
+            <h2>Rolls-Royce Motor Cars</h2>
+            <p>
+              Rolls Royce is widely regarded as the most prestigious automotive brand
+              in the world. Founded by Charles Rolls and Henry Royce in 1904, the
+              company built its reputation on absolute engineering perfection 
+              a standard that Royce himself summarised in his famous dictum:
+              <em>"Whatever is rightly done, however humble, is noble."</em>
+            </p>
+            <p>
+              Every Rolls Royce is hand built at the company's Goodwood facility in
+              West Sussex, England. A single vehicle may take hundreds of hours to
+              complete. The Phantom, the Ghost, the Cullinan SUV, and the Wraith
+              coupe each cater to a different vision of ultimate luxury, yet all
+              share the same ethos: nothing is too much.
+            </p>
+            <h4>What Makes Rolls Royce the Pinnacle of Luxury?</h4>
+            <ul class="highlights-list">
+              <li>Entirely hand built at the Goodwood Home of Rolls Royce</li>
+              <li>Starlight headliner featuring hundreds of hand laid fibre optics</li>
+              <li>Bespoke programme allowing near-unlimited personalisation</li>
+              <li>Spirit of Ecstasy mascot  an icon of automotive culture</li>
+              <li>Self levelling ride system for an unparalleled "Magic Carpet" feel</li>
+            </ul>
+            <p>
+              <a href="https://www.rolls-roycemotorcars.com" target="_blank" rel="noopener noreferrer">
+                Visit the Official Rolls-Royce Website ↗
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Bentley -->
+    <section class="section" id="bentley">
+      <div class="container">
+        <div class="brand-card">
+          <img src="images/bentley.jpg" alt="A Bentley Continental GT in dark green" />
+          <div class="brand-card-body">
+            <span class="founding-year">Founded 1919 · Cricklewood, England</span>
+            <span class="brand-tag">Bentley</span>
+            <h2>Bentley Motors</h2>
+            <p>
+              Walter Owen Bentley  known simply as W.O.  founded Bentley Motors
+              in 1919 with a simple but demanding vision: to build a fast car, a good
+              car, the best in its class. That vision bore fruit almost immediately,
+              with Bentley winning the Le Mans 24 Hours race five times between
+              1924 and 1930. The "Bentley Boys" wealthy young racing drivers of
+              the era became cultural icons.
+            </p>
+            <p>
+              Today, Bentley occupies a unique position: a brand offering the
+              performance excitement of a sports car and the sumptuous comfort of a
+              grand tourer. The Continental GT, Bentayga SUV, and Mulsanne (until
+              its discontinuation) represent this duality perfectly.
+            </p>
+            <h4>What Makes Bentley a Luxury Brand?</h4>
+            <ul class="highlights-list">
+              <li>Over 100 years of British craftsmanship and racing heritage</li>
+              <li>Hand-stitched leather and sustainably sourced wood veneers</li>
+              <li>W12 and V8 twin-turbocharged engines of extraordinary refinement</li>
+              <li>Bentley Rotating Display a tri-veneer instrument panel</li>
+              <li>Mulliner bespoke division for personal customisation</li>
+            </ul>
+            <p>
+              <a href="https://www.bentleymotors.com" target="_blank" rel="noopener noreferrer">
+                Visit the Official Bentley Website ↗
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Brand Comparison Summary -->
+    <section class="section section-alt" id="brand-summary">
+      <div class="container">
+        <h2 class="section-title">Brand Comparison at a Glance</h2>
+ 
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Brand</th>
+              <th>Country</th>
+              <th>Founded</th>
+              <th>Flagship Model</th>
+              <th>Known For</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>BMW</strong></td>
+              <td>Germany</td>
+              <td>1916</td>
+              <td>7 Series</td>
+              <td>Driver dynamics &amp; technology</td>
+            </tr>
+            <tr>
+              <td><strong>Mercedes-Benz</strong></td>
+              <td>Germany</td>
+              <td>1926</td>
+              <td>S-Class</td>
+              <td>Innovation &amp; safety leadership</td>
+            </tr>
+            <tr>
+              <td><strong>Audi</strong></td>
+              <td>Germany</td>
+              <td>1909</td>
+              <td>A8</td>
+              <td>Technology &amp; Quattro AWD</td>
+            </tr>
+            <tr>
+              <td><strong>Rolls-Royce</strong></td>
+              <td>England</td>
+              <td>1904</td>
+              <td>Phantom</td>
+              <td>Bespoke craftsmanship &amp; prestige</td>
+            </tr>
+            <tr>
+              <td><strong>Bentley</strong></td>
+              <td>England</td>
+              <td>1919</td>
+              <td>Continental GT</td>
+              <td>Grand touring &amp; racing heritage</td>
+            </tr>
+          </tbody>
+        </table>
+ 
+        <!-- Description List -->
+        <h3 class="mt-2">Key Terminology</h3>
+        <dl class="desc-list">
+          <dt>Grand Tourer (GT)</dt>
+          <dd>A high performance car designed for long distance travel in comfort, combining speed with refinement.</dd>
+          <dt>Bespoke Programme</dt>
+          <dd>A factory customisation service allowing buyers to specify unique materials, colours, and features for their vehicle.</dd>
+          <dt>Performance Division</dt>
+          <dd>A sub brand focused on producing high output variants: BMW M, Mercedes AMG, Audi Sport, and Bentley Mulliner.</dd>
+          <dt>Coach-Built</dt>
+          <dd>A vehicle whose body has been individually constructed by specialist craftspeople, as opposed to automated assembly.</dd>
+        </dl>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>LUXURY<span>AUTO</span></h3>
+        <p></p>
+        <p class="small mt-1">Student ID:3327722 &nbsp;&nbsp;</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="Main.html">Home</a></li>
+          <li><a href="Brands.html">Brands</a></li>
+          <li><a href="Features.html">Features</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="References.html">References</a></li>
+          <li><a href="MetaPage.html">Meta Page</a></li>
+          <li><a href="mailto:student@university.edu">Email Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p></p>
+    </div>
+  </footer>
+ 
+</body>
+</html>

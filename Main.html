@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luxury Cars – A university assignment exploring the world of premium automotive brands.">
+  <meta name="author" content="Student ID: 3327722 ">
+  <title>Luxury Cars | Home</title>
+ 
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+ 
+  <!-- Internal CSS -->
+  <style>
+    .intro-lead {
+      font-size: 1.15rem;
+      color: #444444;
+      border-left: 4px solid #1A73E8;
+      padding-left: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .brand-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    .brand-badge {
+      background-color: #111111;
+      color: #C9A84C;
+      font-family: 'Palatino Linotype', Palatino, serif;
+      padding: 0.5rem 1.4rem;
+      border-radius: 30px;
+      font-size: 0.95rem;
+      font-weight: bold;
+      letter-spacing: 0.06em;
+    }
+    .pillar-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .pillar {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: #FFFFFF;
+      border-radius: 12px;
+      border: 1px solid #D1D9E6;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+    }
+    .pillar-icon { font-size: 2rem; margin-bottom: 0.6rem; }
+    .pillar h4  { color: #111111; margin-bottom: 0.3rem; }
+    .pillar p   { font-size: 0.88rem; color: #6B7280; margin: 0; }
+    @media (max-width: 768px) {
+      .pillar-row { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+ 
+<body>
+ 
+  <!-- Navigation -->
+  <nav class="site-nav" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a href="Main.html" class="nav-logo">LUXURY<span>AUTO</span></a>
+      <ul class="nav-links">
+        <li><a href="Main.html" class="active">Home</a></li>
+        <li><a href="Brands.html">Brands</a></li>
+        <li><a href="Features.html">Features</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="References.html">References</a></li>
+        <li><a href="MetaPage.html">Meta Page</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+  <!-- Hero Section -->
+  <header class="hero">
+    <img
+      src="images/car-main.jpg"
+      alt="A luxury car on an open road at dusk"
+      class="hero-image"
+    >
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge">University Assignment</span>
+      <h1>Luxury Cars</h1>
+
+      <!-- Inline CSS example -->
+      <p style="font-style: italic; color: #E0E0E0;">
+        We All Like Those Four-Wheeled Machines
+      </p>
+
+      <p>
+        Exploring the world of premium automotive engineering, timeless design,<br>
+        and the brands that have defined excellence for generations.
+      </p>
+
+      <a href="Brands.html" class="btn btn-gold">Explore Brands</a>
+    </div>
+  </header>
+ 
+  <!-- Main Content -->
+  <main id="main-content">
+ 
+    <!-- Introduction Section -->
+    <section class="section section-alt" id="introduction">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <h2>What Are Luxury Cars?</h2>
+            <p class="intro-lead">
+              Luxury cars are more than a means of transport.They are an experience
+              crafted to engage every sense.
+            </p>
+            <p>
+              At their core, luxury cars are vehicles engineered and designed to offer
+              superior comfort, performance, and craftsmanship compared to standard
+              production cars. They typically feature handcrafted interiors, advanced
+              technology systems, powerful engines, and a level of attention to detail
+              that sets them apart in every measurable way.
+            </p>
+            <p>
+              These vehicles are produced by a select group of manufacturers who have
+              spent decades and in some cases over a century  perfecting their craft.
+              Brands such as <strong>Rolls-Royce</strong>, <strong>Bentley</strong>,
+              <strong>Mercedes-Benz</strong>, <strong>BMW</strong>, and
+              <strong>Audi</strong> represent the pinnacle of what the automotive
+              industry can achieve when cost is not the primary constraint.
+            </p>
+            <p>
+              Owning a luxury car is often associated with success, refinement, and
+              a discerning appreciation for quality. Yet beyond the status they confer,
+              these machines genuinely deliver an extraordinary driving experience.
+            </p>
+          </div>
+ 
+          <div>
+            <h2>Why Do People Love Luxury Cars?</h2>
+            <p>
+              The appeal of luxury cars is both rational and emotional. On a practical
+              level, they offer features from adaptive suspension to massaging seats
+              to ambient lighting systems that simply do not exist in ordinary vehicles.
+              On an emotional level, they carry heritage, identity, and aspiration.
+            </p>
+ 
+            <!-- Unordered List -->
+            <ul class="styled-list">
+              <li>Exceptional ride comfort on any road surface</li>
+              <li>Cutting-edge safety and driver assistance technology</li>
+              <li>Handcrafted interiors using premium leather and wood</li>
+              <li>Superior engine performance and smooth power delivery</li>
+              <li>Strong brand identity and long-standing prestige</li>
+              <li>High residual value and strong resale demand</li>
+            </ul>
+ 
+            <p>
+              For many buyers, a luxury car is the culmination of years of hard work.
+              A tangible reward that also happens to make daily life more enjoyable.
+            </p>
+          </div>
+        </div>
+ 
+        <!-- Four Pillars -->
+        <h3 class="text-center mt-2">The Four Pillars of Luxury Motoring</h3>
+        <div class="pillar-row">
+          <div class="pillar">
+            <div class="pillar-icon"></div>
+            <h4>Comfort</h4>
+            <p>Silenced cabins, adaptive seats, and seamless ride quality.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"></div>
+            <h4>Performance</h4>
+            <p>Turbocharged and electrified powertrains built to thrill.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"></div>
+            <h4>Prestige</h4>
+            <p>Decades of heritage and iconic badges recognised globally.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"></div>
+            <h4>Status</h4>
+            <p>A symbol of achievement, success, and refined taste.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Featured Brands Strip -->
+    <section class="section" id="brands-overview">
+      <div class="container text-center">
+        <h2 class="section-title">World Renowned Luxury Brands</h2>
+        <p class="text-gray">
+          These manufacturers consistently set the standard for what the automotive
+          world considers exceptional. Each brand carries its own distinct philosophy,
+          yet all share an uncompromising commitment to quality.
+        </p>
+        <div class="brand-strip">
+          <span class="brand-badge">BMW</span>
+          <span class="brand-badge">Mercedes-Benz</span>
+          <span class="brand-badge">Audi</span>
+          <span class="brand-badge">Rolls-Royce</span>
+          <span class="brand-badge">Bentley</span>
+        </div>
+        <p>
+          From BMW's sportingly precise machines to the serene coach built grandeur
+          of Rolls-Royce, these brands collectively define the upper echelon of
+          motoring. <a href="Brands.html">Read more about each brand →</a>
+        </p>
+      </div>
+    </section>
+ 
+    <!-- Blockquote Section -->
+    <section class="section section-accent" id="quote-section">
+      <div class="container" style="max-width: 800px;">
+        <h2 class="section-title">A Thought on Excellence</h2>
+        <blockquote>
+          The quality of a vehicle is felt long after the price has been forgotten.
+          Great cars do not just move people  they move something within people.
+          <cite> Adapted from a sentiment widely shared in automotive journalism</cite>
+        </blockquote>
+        <p class="text-center text-gray small">
+          This sentiment captures why luxury automotive brands continue to command
+          devotion from enthusiasts and collectors around the world.
+        </p>
+      </div>
+    </section>
+ 
+    <!-- Comfort and Performance Detail -->
+    <section class="section section-alt" id="comfort-performance">
+      <div class="container">
+        <h2 class="section-title">Comfort, Performance &amp; Prestige</h2>
+ 
+        <div class="two-col">
+          <div>
+            <h3>The Comfort Dimension</h3>
+            <p>
+              Modern luxury cars are rolling sanctuaries. Cabin noise is measured in
+              fractions of a decibel, and manufacturers spend thousands of engineering
+              hours on acoustic insulation alone. Massage seat systems, four zone
+              climate control, and fragrance diffusers are increasingly standard
+              features in the premium segment.
+            </p>
+            <p>
+              Suspension systems in cars like the Rolls-Royce Ghost use cameras to
+              read the road ahead and adjust damping in real time eliminating bumps
+              before passengers even feel them.
+            </p>
+ 
+            <!-- Description List -->
+            <dl class="desc-list">
+              <dt>Acoustic Insulation</dt>
+              <dd>Double-laminated glass and foam-injected door panels reduce road noise to near silence.</dd>
+              <dt>Climate Control</dt>
+              <dd>Individual zone settings allow each passenger to personalise their temperature and airflow.</dd>
+              <dt>Massage Seating</dt>
+              <dd>Multi-point air-bladder systems mimic professional massage techniques during long journeys.</dd>
+            </dl>
+          </div>
+ 
+          <div>
+            <h3>Performance and Prestige</h3>
+            <p>
+              Luxury is not limited to softness. Many premium brands particularly
+              BMW's M division and Audi Sport engineer vehicles that blend
+              extraordinary comfort with genuine driving excitement. A BMW M5
+              Competition, for example, produces over 600 horsepower while still
+              offering a perfectly liveable daily experience.
+            </p>
+            <p>
+              The prestige dimension is equally significant. When someone drives a
+              Bentley Continental GT, they are not simply driving a fast car.They
+              are participating in a tradition of hand-built British craftsmanship
+              that stretches back to 1919. That heritage commands deep respect
+              among those who understand it.
+            </p>
+ 
+            <!-- Ordered List -->
+            <ol class="styled-ol">
+              <li>Engineering precision verified by hundreds of test cycles</li>
+              <li>Materials sourced from specialist global suppliers</li>
+              <li>Handcrafting and quality inspection at every production stage</li>
+              <li>Post-production road testing before customer delivery</li>
+              <li>Ongoing customer support and ownership experience programmes</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- External Link Section -->
+    <section class="section" id="learn-more">
+      <div class="container text-center" style="max-width: 700px;">
+        <h2>Explore Further</h2>
+        <p>
+          For a comprehensive overview of the global luxury car market, including
+          current trends, model reviews, and buyer guides, the following external
+          resource is highly recommended:
+        </p>
+        <p>
+          <a
+            href="https://www.caranddriver.com/luxury-cars"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            Visit Car and Driver — Luxury Cars ↗
+          </a>
+        </p>
+        <p class="small text-gray mt-1">
+          <em>Car and Driver</em> is a respected automotive publication with decades
+          of editorial expertise in vehicle testing and market analysis.
+        </p>
+ 
+        <hr class="divider">
+ 
+        <p>
+          Ready to explore the individual brands? Navigate to our dedicated
+          <a href="Brands.html">Brands page</a> or learn about the specific
+          <a href="Features.html">features</a> that define the luxury car experience.
+        </p>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>LUXURY<span>AUTO</span></h3>
+        <p>
+          A university assignment exploring the world of premium automotive
+          brands, engineering excellence, and the culture of luxury motoring.
+        </p>
+        <p class="small mt-1">Student ID: 3327722</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="Main.html">Home</a></li>
+          <li><a href="Brands.html">Brands</a></li>
+          <li><a href="Features.html">Features</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="References.html">References</a></li>
+          <li><a href="MetaPage.html">Meta Page</a></li>
+          <li><a href="mailto:student@university.edu">Email Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Luxury Cars Assignment</p>
+    </div>
+  </footer>
+ 
+</body>
+</html>

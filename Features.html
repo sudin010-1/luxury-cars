@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Luxury car features including comfort, performance, technology, safety, and design." />
+  <meta name="author" content="Student ID: 3327722" />
+  <title>Luxury Cars | Features</title>
+ 
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+ 
+  <!-- Internal CSS -->
+  <style>
+    .rating-bar {
+      height: 10px;
+      background-color: #D1D9E6;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-top: 0.4rem;
+    }
+    .rating-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #C9A84C, #1A73E8);
+      border-radius: 6px;
+    }
+    .feature-detail-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.8rem;
+      margin-top: 2rem;
+    }
+    .feature-detail-card {
+      background-color: #FFFFFF;
+      border: 1px solid #D1D9E6;
+      border-top: 4px solid #C9A84C;
+      border-radius: 10px;
+      padding: 1.8rem;
+      box-shadow: 0 3px 14px rgba(0,0,0,0.06);
+    }
+    .feature-detail-card h4 {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .feature-detail-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.8rem 0 0;
+    }
+    .feature-detail-card ul li {
+      padding: 0.25rem 0 0.25rem 1.6rem;
+      position: relative;
+      font-size: 0.9rem;
+      color: #444444;
+    }
+    .feature-detail-card ul li::before {
+      content: '★';
+      position: absolute;
+      left: 0;
+      color: #C9A84C;
+      font-size: 0.8rem;
+    }
+    .legend-row {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+      font-size: 0.88rem;
+      color: #6B7280;
+    }
+    .legend-row span { display: flex; align-items: center; gap: 0.4rem; }
+    .dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+    .dot-check { background-color: #22C55E; }
+    .dot-cross  { background-color: #EF4444; }
+  </style>
+</head>
+ 
+<body>
+ 
+  <!-- Navigation -->
+  <nav class="site-nav" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a href="Main.html" class="nav-logo">LUXURY<span>AUTO</span></a>
+      <ul class="nav-links">
+        <li><a href="Main.html">Home</a></li>
+        <li><a href="Brands.html">Brands</a></li>
+        <li><a href="Features.html" class="active">Features</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="References.html">References</a></li>
+        <li><a href="MetaPage.html">Meta Page</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+  <!-- Page Banner -->
+  <header class="page-banner">
+    <h1>Luxury Car Features</h1>
+    <div class="gold-line"></div>
+    <p>
+      A detailed examination of the technologies, design principles, and engineering
+      achievements that separate luxury cars from everything else on the road.
+    </p>
+  </header>
+ 
+  <main id="main-content">
+ 
+    <!-- Feature Icons Overview -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Eight Pillars of Automotive Excellence</h2>
+        <div class="feature-grid">
+ 
+          <div class="feature-item">
+            <span class="feature-icon"></span>
+            <h4>Comfort</h4>
+            <p>Silence, space, and ergonomic perfection for every occupant.</p>
+          </div>
+ 
+          <div class="feature-item">
+            <span class="feature-icon"></span>
+            <h4>Performance</h4>
+            <p>Exceptional power delivery with effortless, controllable speed.</p>
+          </div>
+ 
+          <div class="feature-item">
+            <span class="feature-icon"></span>
+            <h4>Speed</h4>
+            <p>0–100 km/h figures that challenge dedicated sports cars.</p>
+          </div>
+ 
+          <div class="feature-item">
+            <span class="feature-icon"></span>
+            <h4>Technology</h4>
+            <p>Infotainment, connectivity, and semi-autonomous driving systems.</p>
+          </div>
+ 
+          <div class="feature-item">
+            <span class="feature-icon"></span>
+            <h4>Safety</h4>
+            <p>Industry-leading passive and active safety engineering.</p>
+          </div>
+ 
+          <div class="feature-item">
+            <span class="feature-icon"></span>
+            <h4>Design</h4>
+            <p>Timeless exterior styling with a strong aesthetic identity.</p>
+          </div>
+ 
+          <div class="feature-item">
+            <span class="feature-icon"></span>
+            <h4>Interior Quality</h4>
+            <p>Hand-stitched leather, rare wood veneers, and fine metals.</p>
+          </div>
+ 
+          <div class="feature-item">
+            <span class="feature-icon"></span>
+            <h4>Driver Assistance</h4>
+            <p>Adaptive cruise, lane keeping, and automated parking systems.</p>
+          </div>
+ 
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Brand Feature Comparison Table -->
+    <section class="section" id="comparison-table">
+      <div class="container">
+        <h2 class="section-title">Brand Feature Comparison</h2>
+        <p class="text-center text-gray mb-2" style="max-width:680px; margin-left:auto; margin-right:auto;">
+          The table below compares key luxury features across the five brands
+          covered in this assignment. <span class="check">✓</span> indicates standard
+          or optional availability; <span class="cross">✗</span> indicates not
+          typically offered at the time of writing.
+        </p>
+ 
+        <div class="legend-row">
+          <span><span class="dot dot-check"></span> Available / Standard</span>
+          <span><span class="dot dot-cross"></span> Not Offered</span>
+        </div>
+ 
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>BMW</th>
+              <th>Mercedes-Benz</th>
+              <th>Audi</th>
+              <th>Rolls-Royce</th>
+              <th>Bentley</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Adaptive Air Suspension</strong></td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+            </tr>
+            <tr>
+              <td><strong>Massage Seat System</strong></td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+            </tr>
+            <tr>
+              <td><strong>Head-Up Display (HUD)</strong></td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+            </tr>
+            <tr>
+              <td><strong>Level 2 Autonomous Driving</strong></td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+            </tr>
+            <tr>
+              <td><strong>Night Vision Camera</strong></td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="cross">✗</td>
+            </tr>
+            <tr>
+              <td><strong>Starlight Headliner</strong></td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+              <td class="check">✓</td>
+              <td class="cross">✗</td>
+            </tr>
+            <tr>
+              <td><strong>Hybrid / EV Option</strong></td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+            </tr>
+            <tr>
+              <td><strong>Bespoke Interior Programme</strong></td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+            </tr>
+            <tr>
+              <td><strong>Performance Sport Division</strong></td>
+              <td class="check">✓ (M)</td>
+              <td class="check">✓ (AMG)</td>
+              <td class="check">✓ (RS)</td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+            </tr>
+            <tr>
+              <td><strong>Surround Sound Audio (Premium)</strong></td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+            </tr>
+          </tbody>
+        </table>
+ 
+        <!-- Performance Figures Table -->
+        <h3 class="mt-2">Performance Figures — Flagship Models</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Engine</th>
+              <th>Power (hp)</th>
+              <th>0–100 km/h</th>
+              <th>Top Speed</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>BMW 7 Series M760e</strong></td>
+              <td>3.0L I6 Hybrid</td>
+              <td>571 hp</td>
+              <td>4.3 sec</td>
+              <td>250 km/h</td>
+              <td class="stars">★★★★★</td>
+            </tr>
+            <tr>
+              <td><strong>Mercedes S580 4MATIC</strong></td>
+              <td>4.0L V8 Biturbo</td>
+              <td>496 hp</td>
+              <td>4.4 sec</td>
+              <td>250 km/h</td>
+              <td class="stars">★★★★★</td>
+            </tr>
+            <tr>
+              <td><strong>Audi A8 L 60 TFSI</strong></td>
+              <td>4.0L V8 TFSI</td>
+              <td>460 hp</td>
+              <td>4.4 sec</td>
+              <td>250 km/h</td>
+              <td class="stars">★★★★★</td>
+            </tr>
+            <tr>
+              <td><strong>Rolls-Royce Ghost</strong></td>
+              <td>6.75L V12 Twin-Turbo</td>
+              <td>563 hp</td>
+              <td>4.6 sec</td>
+              <td>250 km/h</td>
+              <td class="stars">★★★★★</td>
+            </tr>
+            <tr>
+              <td><strong>Bentley Continental GT S</strong></td>
+              <td>4.0L V8 Twin-Turbo</td>
+              <td>542 hp</td>
+              <td>3.9 sec</td>
+              <td>318 km/h</td>
+              <td class="stars">★★★★★</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+ 
+    <!-- Detailed Feature Cards -->
+    <section class="section section-alt" id="feature-details">
+      <div class="container">
+        <h2 class="section-title">Features in Depth</h2>
+        <div class="feature-detail-grid">
+ 
+          <div class="feature-detail-card">
+            <h4><span></span> Comfort Engineering</h4>
+            <p>
+              Luxury car manufacturers treat cabin silence as a fundamental engineering
+              target. Multi-layer acoustic glass, foam-injected body panels, and
+              active noise cancellation systems work in concert to isolate occupants
+              from the outside world.
+            </p>
+            <ul>
+              <li>Four-zone climate with individual seat heating and cooling</li>
+              <li>Multi-point massage systems with adjustable intensity</li>
+              <li>Reclining rear seats in long-wheelbase variants</li>
+              <li>Panoramic glass roofs with electrochromic tinting</li>
+            </ul>
+          </div>
+ 
+          <div class="feature-detail-card">
+            <h4><span></span> Powertrain Performance</h4>
+            <p>
+              Modern luxury cars are not slow — they are effortlessly fast. The trend
+              towards turbocharged engines and electrification has produced powertrains
+              that deliver staggering acceleration while maintaining exceptional fuel
+              efficiency.
+            </p>
+            <ul>
+              <li>Mild hybrid and plug-in hybrid options across most ranges</li>
+              <li>All-wheel drive as standard in most flagship models</li>
+              <li>Variable sport suspension modes from comfort to track</li>
+              <li>Rear-wheel steering for improved low-speed manoeuvrability</li>
+            </ul>
+          </div>
+ 
+          <div class="feature-detail-card">
+            <h4><span></span> Infotainment &amp; Technology</h4>
+            <p>
+              The technology gap between luxury and mainstream cars has never been
+              wider. Screens, connectivity, and AI-driven assistance have transformed
+              the cabin into a digital command centre without sacrificing refinement.
+            </p>
+            <ul>
+              <li>Large curved OLED displays with gesture and voice control</li>
+              <li>Over-the-air software updates for continual improvement</li>
+              <li>Wireless smartphone integration and in-car Wi-Fi</li>
+              <li>Augmented reality navigation overlaid on camera feeds</li>
+            </ul>
+          </div>
+ 
+          <div class="feature-detail-card">
+            <h4><span></span> Safety Systems</h4>
+            <p>
+              Luxury brands consistently lead the industry on safety innovation.
+              Many features now considered standard across all vehicles — including
+              airbags, ABS, and stability control — were pioneered in premium cars.
+            </p>
+            <ul>
+              <li>Pre-safe systems that brace occupants before impact</li>
+              <li>360-degree camera with parking automation</li>
+              <li>Blind-spot monitoring with cross-traffic alert</li>
+              <li>Intersection and pedestrian avoidance technology</li>
+            </ul>
+          </div>
+ 
+          <div class="feature-detail-card">
+            <h4><span></span> Exterior Design</h4>
+            <p>
+              Luxury car design communicates status without shouting. Proportions are
+              carefully crafted, surfaces are sculpted with precision, and every
+              design element serves both an aesthetic and an aerodynamic purpose.
+            </p>
+            <ul>
+              <li>Full-LED or laser headlight systems with adaptive beam patterns</li>
+              <li>20+ inch alloy wheels with bespoke finishes</li>
+              <li>Flush door handles that retract at speed</li>
+              <li>Exclusive paint options with deep multi-coat lacquer</li>
+            </ul>
+          </div>
+ 
+          <div class="feature-detail-card">
+            <h4><span></span> Interior Craftsmanship</h4>
+            <p>
+              The interiors of luxury cars represent some of the finest applied
+              craftsmanship in any manufactured product. Materials are selected for
+              tactile quality, durability, and aesthetic harmony.
+            </p>
+            <ul>
+              <li>Merino or Nappa full-grain leather throughout</li>
+              <li>Real open-pore wood, carbon fibre, or metal trim inlays</li>
+              <li>Hand-stitched dashboards and door panels</li>
+              <li>Soft-close doors with precision-engineered latches</li>
+            </ul>
+          </div>
+ 
+          <div class="feature-detail-card">
+            <h4><span></span> Advanced Driver Assistance (ADAS)</h4>
+            <p>
+              Modern luxury vehicles are increasingly capable of driving themselves
+              on motorways and in urban traffic. Level 2 and emerging Level 3
+              autonomous systems are becoming standard in the premium segment.
+            </p>
+            <ul>
+              <li>Adaptive cruise control with stop-and-go functionality</li>
+              <li>Active lane centring and lane change assist</li>
+              <li>Automated parking with remote control capability</li>
+              <li>Traffic sign recognition and speed limit assistance</li>
+            </ul>
+          </div>
+ 
+          <div class="feature-detail-card">
+            <h4><span></span> Audio Excellence</h4>
+            <p>
+              The listening experience inside a luxury car is engineered with the
+              same rigour as the driving experience. Partnerships with leading audio
+              brands produce bespoke speaker systems tuned specifically for each cabin.
+            </p>
+            <ul>
+              <li>Bowers &amp; Wilkins Diamond surround (BMW)</li>
+              <li>Burmester 4D surround sound system (Mercedes-Benz)</li>
+              <li>Bang &amp; Olufsen 3D Advanced Sound System (Audi)</li>
+              <li>Naim for Bentley premium audio</li>
+            </ul>
+          </div>
+ 
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Blockquote -->
+    <section class="section section-accent">
+      <div class="container" style="max-width: 750px;">
+        <blockquote>
+          A luxury car is not defined by its price alone, but by the sum of decisions
+          made by engineers, designers, and craftspeople who refused to accept
+          anything less than the very best solution to every problem they encountered.
+          <cite> Common sentiment in automotive design philosophy</cite>
+        </blockquote>
+      </div>
+    </section>
+ 
+    <!-- Summary Info Box -->
+    <section class="section section-alt">
+      <div class="container" style="max-width: 900px;">
+        <div class="info-box">
+          <h4>Key Takeaway</h4>
+          <p>
+            The features that define luxury cars are not individual technologies 
+            they are the result of holistic design thinking. Every element, from the
+            weight of a door handle to the resolution of a display screen, is
+            considered as part of a coherent whole. It is this integration of
+            excellence across every dimension that separates genuine luxury from
+            mere premium positioning.
+          </p>
+        </div>
+ 
+        <!-- Description List: Technical Terms -->
+        <h3>Technical Glossary</h3>
+        <dl class="desc-list">
+          <dt>ADAS (Advanced Driver Assistance Systems)</dt>
+          <dd>A collection of electronic technologies that assist the driver in operating a vehicle more safely, including adaptive cruise control, lane assist, and automated emergency braking.</dd>
+          <dt>OLED Display</dt>
+          <dd>Organic Light-Emitting Diode a display technology offering superior contrast, colour accuracy, and flexibility compared to conventional LCD screens.</dd>
+          <dt>Air Suspension</dt>
+          <dd>A ride system using pressurised air bags in place of conventional steel springs, allowing variable ride height and stiffness adjustment.</dd>
+          <dt>Torque Vectoring</dt>
+          <dd>A system that selectively applies braking or power to individual wheels to improve cornering precision and stability.</dd>
+        </dl>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>LUXURY<span>AUTO</span></h3>
+        <p></p>
+        <p class="small mt-1">Student ID: 3327722 &nbsp;&nbsp;</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="Main.html">Home</a></li>
+          <li><a href="Brands.html">Brands</a></li>
+          <li><a href="Features.html">Features</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="References.html">References</a></li>
+          <li><a href="MetaPage.html">Meta Page</a></li>
+          <li><a href="mailto:student@university.edu">Email Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p> </p>
+    </div>
+  </footer>
+ 
+</body>
+</html>
